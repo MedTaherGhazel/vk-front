@@ -1,0 +1,12 @@
+<form class="formm">
+  <input type="text" placeholder="Filter by name" #filter>
+  <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
+</form>
+<div class="hero">
+
+<section class="results" *ngFor="let program of filteredProgramList">
+  <app-program [program]="program"></app-program>
+</section>
+
+
+</div>

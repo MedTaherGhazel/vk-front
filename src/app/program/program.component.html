@@ -1,0 +1,10 @@
+<div class="hero">
+<article class="cta">
+	<img class="listing-photo" [src]="program.photo" alt="Exterior photo of {{program.name}}">
+	<div class="cta__text-column">
+		<h2 class="listing-heading">{{ program.name }}</h2>
+    <p class="listing-location"> {{ program.description }}</p>
+<a routerLink="/program-detail/{{program.name}}/{{program.id}}">Read all about it</a>
+	</div>
+</article>
+</div>
