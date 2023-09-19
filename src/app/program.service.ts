@@ -5,19 +5,26 @@ import { Program } from './program';
   providedIn: 'root'
 })
 export class ProgramService {
-  readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
-  programList: Program[] = [{
-    id: 9999,
-    name: 'aa',
+  programList: Program[] = [
+    {
+    id: 1,
+    name: 'lose weight ',
     description: 'this program is for beginner',
-    photo: '${this.baseUrl}/example-house.jpg'
+    photo: '3.jpg'
   },
   {
-    id: 99,
-    name: 'bb',
-    description: 'aaaaaaaaaaaaaaaaaaa',
-    photo: '${this.baseUrl}/example-house.jpg'
-  }];
+    id: 1,
+    name: 'lose weight ',
+    description: 'this program is for beginner',
+    photo: '3.jpg'
+  },
+  {
+    id: 2,
+    name: 'home workout',
+    description: 'training at home',
+    photo: '2.jpg'
+  }
+];
 
   constructor() { }
   getAllPrograms(): Program[] {

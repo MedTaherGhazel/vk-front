@@ -1,8 +1,8 @@
 import { Component, Input, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProgramComponent } from '../program/program.component';
-import { Program } from '../program';
-import { ProgramService } from '../program.service';
+import { ProgramComponent } from '../../program/program.component';
+import { Program } from '../../program';
+import { ProgramService } from '../../program.service';
 @Component({
   selector: 'app-programs',
   templateUrl: './programs.component.html',

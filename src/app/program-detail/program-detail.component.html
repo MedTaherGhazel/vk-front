@@ -1,2 +1,11 @@
 <p>program-detail works!</p>
-<p>{{ program?.id }}</p>
+<!-- <p>{{ program?.id }}</p> -->
+<p>{{ program?.name }}</p>
+<p>{{ program?.description }}</p>
+<section class="results">
+  <app-week *ngFor="let week of WeekList" [week]="week"></app-week>
+</section>
+
+
+
+

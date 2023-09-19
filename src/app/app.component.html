@@ -1,25 +1,4 @@
-<header>
-  <div class="navbar">
-    <div class="logo"><a href="">Vikings Gym</a></div>
-    <ul class="links">
-      <li><a routerLink="">Home</a></li>
-      <li><a routerLink="">About</a></li>
-      <li><a routerLink="programs">Programs</a></li>
-      <li><a routerLink="">etc</a></li>
-    </ul>
-    <a href="" class="action_btn">Get Started</a>
-    <div class="toggle_btn" (click)="toggleDropdown()">
-      <i class="fa-solid" [ngClass]="{'fa-bars': !isDropdownOpen, 'fa-xmark': isDropdownOpen}"></i>
-    </div>
-    <div class="dropdown_menu" [ngClass]="{'open': isDropdownOpen}">
-      <li><a href="">Home</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="/programs">Programs</a></li>
-      <li><a href="/feedback">etc</a></li>
-      <li><a href="" class="action_bt">Get Started</a></li>
-    </div>
-  </div>
-</header>
+<app-navbar></app-navbar>
 <div class="main">
   <router-outlet></router-outlet>
 </div>
