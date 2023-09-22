@@ -15,7 +15,7 @@ export class ProgramDetailComponent {
   route: ActivatedRoute = inject(ActivatedRoute);
   prgramService = inject(ProgramService);
   program: Program | undefined;
-  @Input() programId: number; // Input property to specify the program_id
+  @Input() programId: number;
   weeks: Week[] = [];
 
   constructor(private weekService: WeekService) {
