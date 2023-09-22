@@ -9,6 +9,9 @@ import { WeekService } from '../week.service';
 })
 export class WeekComponent {
   @Input() week!: Week;
+  @Input() programId!: number;
+
   WeekList: Week[] = [];
   WeekService: WeekService = inject(WeekService);
+
 }

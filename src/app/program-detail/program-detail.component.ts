@@ -15,18 +15,26 @@ export class ProgramDetailComponent {
   route: ActivatedRoute = inject(ActivatedRoute);
   prgramService = inject(ProgramService);
   program: Program | undefined;
+  @Input() programId: number; // Input property to specify the program_id
+  weeks: Week[] = [];
 
-  constructor() {
-    const programId = Number(this.route.snapshot.params['id']);
-    this.program = this.prgramService.getProgramById(programId);
+  constructor(private weekService: WeekService) {
+    this.programId = Number(this.route.snapshot.params['id']);
+    console.log(this.programId)
+    this.program = this.prgramService.getProgramById(this.programId);
+    console.log(this.programId)
   }
-  WeekList: Week[] = [];
-  WeekService: WeekService = inject(WeekService);
-  fetchWeekList(): void {
-    this.WeekService.getWeekList().subscribe((weeks) => {
-      this.WeekList = weeks;
+
+  ngOnInit(): void {
+    if (this.programId !== undefined) {
+      this.fetchWeeksByProgramId(this.programId);
+    }
+  }
+
+  fetchWeeksByProgramId(programId: number): void {
+    this.weekService.getWeeksByProgramId(programId).subscribe((weeks) => {
+      this.weeks = weeks;
       console.log(weeks)
     });
-    console.log(this.WeekList)
-}
+  }
 }

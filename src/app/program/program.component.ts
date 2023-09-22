@@ -11,8 +11,8 @@ export class ProgramComponent {
   @Input() program!: Program;
   constructor(private route:ActivatedRoute) {
     this.route.queryParams.subscribe(data=>{
-      console.log(data['name'])
-      console.log(data['id'])
+      // console.log(data['name'])
+      // console.log(data['id'])
   })
   }
 }

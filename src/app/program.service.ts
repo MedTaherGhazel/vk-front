@@ -13,16 +13,16 @@ export class ProgramService {
     photo: '3.jpg'
   },
   {
-    id: 1,
-    name: 'lose weight ',
+    id: 2,
+    name: 'gain weight ',
     description: 'this program is for beginner',
     photo: '3.jpg'
   },
   {
-    id: 2,
+    id: 3,
     name: 'home workout',
     description: 'training at home',
-    photo: '2.jpg'
+    photo: '2.jpg',
   }
 ];
 
