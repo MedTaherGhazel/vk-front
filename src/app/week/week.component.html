@@ -1,11 +1,6 @@
 <details>
-  <summary><h1>{{ week.name }} <br>{{week.description}}</h1></summary>
+  <summary><h1>{{week?.id}}<br>{{ week?.name }} <br> {{week?.description}}</h1></summary>
   <ul>
-    <!-- <li><app-day *ngFor="let day of days"></app-day></li> -->
-    <li><app-day></app-day></li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
+    <li><app-day *ngFor="let day of days" [day]="day"></app-day></li>
   </ul>
 </details>

@@ -12,6 +12,7 @@ import { SuccessStoriesComponent } from './home/success-stories/success-stories.
 import { HttpClientModule } from '@angular/common/http';
 import { WeekComponent } from './week/week.component';
 import { DayComponent } from './day/day.component';
+import { DayweekComponent } from './dayweek/dayweek.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { DayComponent } from './day/day.component';
     HomeComponent,
     SuccessStoriesComponent,
     WeekComponent,
-    DayComponent
+    DayComponent,
+    DayweekComponent
 
   ],
   imports: [

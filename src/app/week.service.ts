@@ -26,7 +26,7 @@ export class WeekService {
     id_program:2
   },
   {
-    id: 3,
+    id: 4,
     name: 'week 1',
     description: '1111111111111111',
     id_program:3
@@ -41,5 +41,8 @@ constructor() {}
     console.log(filteredWeeks)
     console.log(program_id)
     return of(filteredWeeks);
+  }
+  getWeekById(id: number): Week | undefined {
+    return this.weekList.find(week => week.id === id);
   }
 }
