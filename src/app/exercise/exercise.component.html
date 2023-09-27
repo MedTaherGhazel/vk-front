@@ -1,0 +1,19 @@
+<details *ngFor="let exercise of exercises" >
+  <summary><H1>Exercise : {{exercise.name}}</H1></summary>
+  <br>
+  <ul>
+    <div class="ex-det">
+      <li><h1>{{exercise.description}}</h1></li>
+      <li><h1>day id:</h1>{{exercise.id_day}}</li>
+    </div>
+
+    <div class="vid">
+      <li>
+        <video controls muted >
+          <source src="{{exercise.url}}" type="video/mp4" >
+      </video>
+    </li>
+
+    </div>
+  </ul>
+</details>

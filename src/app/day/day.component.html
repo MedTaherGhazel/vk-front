@@ -1,8 +1,10 @@
-<details *ngFor="let day of days" >
-  <summary>{{day.name}}</summary>
+<details>
+  <summary (click)="getExercises(day.id!)">{{day.name}} <br></summary>
   <br>
   <ul>
-    <li>{{day.description}}</li>
-    <li><h1>week id:</h1>{{day.id_week}}</li>
+    <section class="results">
+      <app-exercise [exercises]="exercises"></app-exercise>
+    </section>
+
   </ul>
 </details>

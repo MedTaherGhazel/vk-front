@@ -12,22 +12,20 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class WeekComponent {
   @Input() week: Week | undefined;
-  @Input() weekId: number=0;
 
-  WeekList: Week[] = [];
   days: Day[] = [];
-  route: ActivatedRoute = inject(ActivatedRoute);
   id: number | undefined;
+
+  @Input() day!: Day;
 
 
   getDays(id: number){
-      this.weekId = id;
       this.dayService.getDaysByWeekId(id).subscribe((days) => {
         this.days = days;
         console.log('days',days)
       });
   }
-  constructor(private dayService: DayService, private weekService: WeekService) {
+  constructor(private dayService: DayService) {
   }
 
 

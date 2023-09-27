@@ -1,9 +1,7 @@
-<header>
+<!-- <header>
   <div class="navbar">
-    <div class="logo"><img src="../../assets/vg.png" alt="" width="30%"></div>
+    <div class="logo"></div>
     <ul class="links">
-      <!-- <li><a routerLink="">Home</a></li>
-      <li><a routerLink="">About</a></li> -->
       <li><a routerLink="programs">Programs</a></li>
       <li><a routerLink="">etc</a></li>
     </ul>
@@ -12,18 +10,32 @@
       <i class="fa-solid" [ngClass]="{'fa-bars': !isDropdownOpen, 'fa-xmark': isDropdownOpen}"></i>
     </div>
     <div class="dropdown_menu" [ngClass]="{'open': isDropdownOpen}">
-      <!-- <li><a href="">Home</a></li>
-      <li><a href="">About</a></li> -->
-      <li><a href="/programs">Programs</a></li>
+     <li><a href="/programs">Programs</a></li>
       <li><a href="/feedback">etc</a></li>
       <li><a href="" class="action_bt">Get Started</a></li>
     </div>
   </div>
-</header>
-<!-- <div class="container">
-  <p class="glitch">
-    <span aria-hidden="true"></span>
-    Vikings Gym
-    <span aria-hidden="true"></span>
-  </p>
-</div> -->
+</header> -->
+
+<nav>
+  <div class="navbar">
+    <div class="container nav-container">
+        <input class="checkbox" type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+      <div class="logo">
+        <h1><img src="../../assets/vg.png" alt="" width="50%"></h1>
+      </div>
+      <div class="menu-items">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">blogs</a></li>
+        <li><a href="#">portfolio</a></li>
+        <li><a href="#">contact</a></li>
+      </div>
+    </div>
+  </div>
+</nav>
