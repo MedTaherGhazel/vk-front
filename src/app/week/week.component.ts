@@ -2,8 +2,8 @@ import { Component, Input, inject } from '@angular/core';
 import { Week } from '../week';
 import { WeekService } from '../week.service';
 import { DayService } from '../day.service';
-import { ActivatedRoute } from '@angular/router';
 import { Day } from '../day';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-week',
@@ -12,30 +12,23 @@ import { Day } from '../day';
 })
 export class WeekComponent {
   @Input() week: Week | undefined;
-  @Input() weekId: number;
-  route: ActivatedRoute = inject(ActivatedRoute);
+  @Input() weekId: number=0;
 
   WeekList: Week[] = [];
-  DayService: DayService = inject(DayService);
-  weekService: WeekService =inject(WeekService);
-  days : Day[] = [];
-  constructor(private dayService: DayService) {
-    this.weekId = Number(this.route.snapshot.params['id']);
-    console.log(this.weekId)
-    this.week = this.weekService.getWeekById(this.weekId);
-    console.log(this.weekId)
+  days: Day[] = [];
+  route: ActivatedRoute = inject(ActivatedRoute);
+  id: number | undefined;
+
+
+  getDays(id: number){
+      this.weekId = id;
+      this.dayService.getDaysByWeekId(id).subscribe((days) => {
+        this.days = days;
+        console.log('days',days)
+      });
+  }
+  constructor(private dayService: DayService, private weekService: WeekService) {
   }
 
-  ngOnInit(): void {
-    if (this.weekId !== undefined) {
-      this.fetchDaysByWeekId(this.weekId);
-    }
-  }
 
-  fetchDaysByWeekId(weekId: number): void {
-    this.dayService.getDaysByWeekId(weekId).subscribe((days) => {
-      this.days = days;
-      console.log(days)
-    });
-  }
 }

@@ -26,21 +26,21 @@ export class DayService {
     name: 'monday',
     description: 'first day',
     url:"",
-    id_week:1
+    id_week:2
   },
   {
     id: 4,
     name: 'monday ',
     description: 'first day',
     url:"",
-    id_week:1
+    id_week:4
   }
 ];
   constructor() { }
-  getDaysByWeekId(week_id: number): Observable<Day[]> {
+  getDaysByWeekId(week_id: number | undefined): Observable<Day[]> {
     const filteredDays = this.dayList.filter((day) => day.id_week === week_id);
-    console.log(filteredDays)
-    console.log(week_id)
+    // console.log(filteredDays)
+    // console.log(typeof(week_id))
     return of(filteredDays);
   }
 }

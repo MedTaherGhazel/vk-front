@@ -38,8 +38,8 @@ constructor() {}
 
  getWeeksByProgramId(program_id: number): Observable<Week[]> {
     const filteredWeeks = this.weekList.filter((week) => week.id_program === program_id);
-    console.log(filteredWeeks)
-    console.log(program_id)
+    console.log('program id',program_id)
+    console.log('program weeks',filteredWeeks)
     return of(filteredWeeks);
   }
   getWeekById(id: number): Week | undefined {

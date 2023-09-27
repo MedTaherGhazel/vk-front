@@ -1,8 +1,8 @@
-<p>{{ program?.id }}</p>
-<p>{{ program?.name }}</p>
-<p>{{ program?.description }}</p>
+<p>program id : {{ program?.id }}</p>
+<p>program name : {{ program?.name }}</p>
+<p>program description : {{ program?.description }}</p>
 <section class="results">
-  <app-week *ngFor="let week of weeks" [week]="week"></app-week>
+  <app-week *ngFor="let week of weeks" [week]="week" ></app-week>
 </section>
 
 

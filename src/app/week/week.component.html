@@ -1,6 +1,11 @@
+
 <details>
-  <summary><h1>{{week?.id}}<br>{{ week?.name }} <br> {{week?.description}}</h1></summary>
+  <summary (click)="getDays(week?.id!)"><h1>week id:{{week?.id}}<br>{{ week?.name }} <br> {{week?.description}}</h1></summary>
   <ul>
-    <li><app-day *ngFor="let day of days" [day]="day"></app-day></li>
+    <section class="results">
+      <app-day [days]="days"></app-day>
+    </section>
+
   </ul>
 </details>
+

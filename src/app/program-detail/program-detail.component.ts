@@ -20,9 +20,9 @@ export class ProgramDetailComponent {
 
   constructor(private weekService: WeekService) {
     this.programId = Number(this.route.snapshot.params['id']);
-    console.log(this.programId)
+    // console.log(this.programId)
     this.program = this.prgramService.getProgramById(this.programId);
-    console.log(this.programId)
+    // console.log(this.programId)
   }
 
   ngOnInit(): void {
@@ -34,7 +34,7 @@ export class ProgramDetailComponent {
   fetchWeeksByProgramId(programId: number): void {
     this.weekService.getWeeksByProgramId(programId).subscribe((weeks) => {
       this.weeks = weeks;
-      console.log(weeks)
+      // console.log(weeks)
     });
   }
 }

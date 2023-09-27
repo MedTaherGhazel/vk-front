@@ -1,9 +1,8 @@
-<details>
+<details *ngFor="let day of days" >
   <summary>{{day.name}}</summary>
   <br>
   <ul>
     <li>{{day.description}}</li>
-    <li>{{day.id_week}}</li>
+    <li><h1>week id:</h1>{{day.id_week}}</li>
   </ul>
 </details>
-

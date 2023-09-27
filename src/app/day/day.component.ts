@@ -1,5 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { Day } from '../day';
+import { ActivatedRoute } from '@angular/router';
+import { DayService } from '../day.service';
+import { WeekService } from '../week.service';
 
 @Component({
   selector: 'app-day',
@@ -8,4 +11,10 @@ import { Day } from '../day';
 })
 export class DayComponent {
   @Input() day!: Day;
+  @Input() days: Day[] = [];
+
+
+  route: ActivatedRoute = inject(ActivatedRoute);
+  constructor() {}
+
 }
