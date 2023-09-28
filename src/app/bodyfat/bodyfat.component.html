@@ -27,39 +27,12 @@
     </form>
     <button type="button" class="form-submit-btn"
       (click)="calculBodyFat(weight.value, height.value,age.value,genderForm)">Submit</button>
+      <div class="details-modal-overlay"></div>
   </form>
 
 </div>
 <div class="result">
-  <div class="form-container">
-    <form class="form">
-      <div class="form-group">
-        <label for="heigth">Weight</label>
-        <input required="" name="weight" id="weight" type="number" #weight>
-      </div>
-      <div class="form-group">
-        <label for="heigth">Height</label>
-        <input required="" name="height" id="height" type="number" #height>
-      </div>
-      <div class="form-group">
-        <label for="heigth">Age</label>
-        <input required="" name="age" id="age" type="number" #age>
-      </div>
-      <div class="form-group">
-        <label for="heigth">Gender</label>
-      </div>
-      <form class="radio-form" #genderForm>
-        <input checked="" value="m" name="hopping" type="radio" id="m">
-        <label for="m"><span></span>Men</label>
-        <input value="w" name="hopping" type="radio" id="w">
-        <label for="w"><span></span>Women</label>
-        <div class="worm">
-          <div class="worm__segment"></div>
-        </div>
-      </form>
-      <button type="button" class="form-submit-btn"
-        (click)="calculBodyFat(weight.value, height.value,age.value,genderForm)">Submit</button>
-    </form>
+<!-- <h1>{{calculBodyFat}}</h1> -->
 </div>
 </div>
 

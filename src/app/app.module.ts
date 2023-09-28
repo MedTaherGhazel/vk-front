@@ -15,6 +15,8 @@ import { DayComponent } from './day/day.component';
 import { ExerciseComponent } from './exercise/exercise.component';
 import { BodyfatComponent } from './bodyfat/bodyfat.component';
 import { AboutComponent } from './about/about.component';
+import { BodyfatModalComponent } from './bodyfat-modal/bodyfat-modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -30,12 +32,14 @@ import { AboutComponent } from './about/about.component';
     ExerciseComponent,
     BodyfatComponent,
     AboutComponent,
+    BodyfatModalComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
