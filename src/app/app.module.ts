@@ -14,6 +14,7 @@ import { WeekComponent } from './week/week.component';
 import { DayComponent } from './day/day.component';
 import { ExerciseComponent } from './exercise/exercise.component';
 import { BodyfatComponent } from './bodyfat/bodyfat.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { BodyfatComponent } from './bodyfat/bodyfat.component';
     DayComponent,
     ExerciseComponent,
     BodyfatComponent,
+    AboutComponent,
 
   ],
   imports: [

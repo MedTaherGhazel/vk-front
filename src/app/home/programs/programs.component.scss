@@ -1,6 +1,10 @@
 * {
 	box-sizing: border-box;
 }
+.success{
+  background-color: rgb(174, 170, 164);
+}
+
 
 img {
 	display: block;
@@ -23,6 +27,9 @@ h2 {
   justify-content:  center;
 
 }
+h1{
+  text-align: center;
+}
 input{
   --shadowColor:12 60% 40%;
   display: flex;
@@ -42,8 +49,8 @@ button{
 	box-shadow: 0.15rem 0.15rem 0 hsl(var(--shadowColor) / 1);
 	border-radius: 0.8rem;
 	border: 0.3rem solid;
-  // min-height: 34rem;
 }
+
 button:hover {
   font-weight: bold;
   scale: 1.05;
@@ -92,7 +99,6 @@ button:active {
 	border: 0.35rem solid;
 }
   .hero{
-    margin : 15%;
     margin-top:5%;
     font-family: "Open Sans", sans-serif;
     display: grid;

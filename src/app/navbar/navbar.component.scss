@@ -13,17 +13,22 @@ body {
 
 .container {
   max-width: 1050px;
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
 .navbar {
   width: 100%;
-  position: relative;
-  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+  position: fixed;
+  margin: 0 auto 0;
+  padding-top: 0px;
+  // box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+  background-color: black;
+  z-index: 1;
 }
 
 .nav-container {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,7 +45,7 @@ body {
 
 .navbar .nav-container a {
   text-decoration: none;
-  color: #0e2431;
+  color: #ffffff;
   font-weight: 500;
   font-size: 1.2rem;
   padding: 0.7rem;
@@ -86,7 +91,7 @@ body {
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background: #0e2431;
+  background: #ffffff;
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -105,7 +110,8 @@ body {
 
 .navbar .menu-items {
   padding-top: 120px;
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  // box-shadow: inset 0 0 2000px rgba(0, 0, 0, 0.5);
+  background-color: black;
   height: 100vh;
   width: 100%;
   transform: translate(-150%);
@@ -124,11 +130,13 @@ body {
 }
 
 .logo {
+  display: block;
   position: absolute;
-  top: 5px;
-  right: 15px;
-  font-size: 1.2rem;
-  color: #0e2431;
+  margin-left: 80%;
+  margin-top: 1%;
+}
+img{
+  width: 50px;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {

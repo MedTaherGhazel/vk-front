@@ -1,9 +1,7 @@
 * {
-  margin: 0;
-  padding: 0;
-  margin-top: 20%;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+  position: relative;
 }
 
 li {
@@ -20,9 +18,3 @@ a:hover {
   color: orange;
 }
 
-
-
-.main{
-  text-align: center;
-  margin-top: 20px;
-}
