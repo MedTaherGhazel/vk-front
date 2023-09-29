@@ -1,0 +1,159 @@
+$mainColor: #080B1C;
+$functionalColor: #E81D58;
+$fontColor: #FFFFFF;
+
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}
+@mixin block($w, $h) {
+  @include size($w, $h);
+  border-radius: 5px;
+  background-color: rgba(white,0.15);
+  margin: 10px auto;
+  padding: 10px;
+}
+
+* {  // border: solid 1px white
+  vertical-align: top;
+  box-sizing: border-box;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+  position: relative;
+  color: rgba($fontColor,0.7);
+  transition-duration: 0.5s;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+  }
+.card {
+  width: 560px;
+  background-color: $mainColor;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(black,0.5);
+  overflow: hidden;
+}
+.screen_1 {
+  right: 0px;
+}
+
+.screen_2 {
+  @include size(100%, 356px);
+  position: absolute;
+  left: 100%;
+  bottom: 75px;
+  background-color: $mainColor;
+}
+.resultTitle {
+  font-size: 25px;
+  color: $fontColor;
+  margin: 20px 30px;
+  text-align: left;
+}
+.blockOutside {
+  padding: 5px 30px;
+}
+.blockInside {
+  border-radius: 5px;
+  background-color: rgba(white,0.15);
+  padding: 25px 0px 15px 0px;
+}
+.resultBMI {
+  font-size: 60px;
+  font-weight: 700;
+  color: $functionalColor;
+}
+.suggestBMI {
+  padding: 20px 0px;
+  & span {
+    color: $fontColor;
+  }
+}
+.suggestion {
+  padding: 20px;
+  color: $fontColor;
+}
+
+
+.title {
+  padding: 30px 0px 20px 0px;
+  i {
+    position: absolute;
+    font-size: 20px;
+    left: 30px;
+    top: 25px;
+  }
+}
+.genderBlock {
+  display: inline-block;
+  @include block(100px,100px);
+  border: solid 2px transparent;
+  &:hover {
+    border-color: $functionalColor;
+    cursor: pointer;
+  }
+  i {
+    font-size: 50px;
+  }
+  .genderText {
+    top: 10px;
+  }
+}
+.genderClicked {
+  background-color: $functionalColor;
+}
+.blockText {
+  margin-bottom: 5px;
+}
+.heightBlock {
+  @include block(205px,auto);
+  .heightInput {
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: 700;
+    color: $fontColor;
+    width: 100%;
+    border-color: transparent transparent $fontColor transparent;
+    border-width: 1px;
+  }
+}
+.weightBlock,
+.ageBlock {
+  @include block(100px,auto);
+  display: inline-block;
+}
+.weightNum,
+.ageNum {
+  font-size: 30px;
+  font-weight: 700;
+  color: $fontColor;
+}
+.circleBtn {
+  @include size(35px,35px);
+  display: inline-block;
+  background-color: rgba($fontColor,0.15);
+  font-size: 25px;
+  font-weight: 300;
+  border-radius: 100%;
+  margin-top: 10px;
+  &:hover {
+    background-color: $functionalColor;
+    user-select: none;
+    cursor: pointer;
+  }
+}
+.calculateBtn {
+  padding: 20px 0px;
+  margin-top: 20px;
+  background-color: $functionalColor;
+  color: $fontColor;
+  &:hover {
+    cursor: pointer;
+    background-color: $fontColor;
+    color: $functionalColor;
+  }
+}
