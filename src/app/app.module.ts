@@ -18,6 +18,7 @@ import { AboutComponent } from './about/about.component';
 import { BodyfatModalComponent } from './bodyfat-modal/bodyfat-modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { UtilitiesComponent } from './utilities/utilities.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { UtilitiesComponent } from './utilities/utilities.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
