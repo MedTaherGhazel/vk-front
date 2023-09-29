@@ -17,6 +17,7 @@ import { BodyfatComponent } from './bodyfat/bodyfat.component';
 import { AboutComponent } from './about/about.component';
 import { BodyfatModalComponent } from './bodyfat-modal/bodyfat-modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { UtilitiesComponent } from './utilities/utilities.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     BodyfatComponent,
     AboutComponent,
     BodyfatModalComponent,
+    UtilitiesComponent,
 
   ],
   imports: [
