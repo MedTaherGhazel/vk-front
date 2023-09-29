@@ -45,7 +45,8 @@ import { SponsorsComponent } from './sponsors/sponsors.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
