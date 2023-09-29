@@ -1,0 +1,177 @@
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Anton|Baskervville|Bebas+Neue|Courgette|Indie+Flower|Josefin+Sans|Graduate|Cinzel+Decorative|Merriweather+Sans|Monoton|Roboto+Condensed|Roboto+Mono:400,700&display=swap');
+
+//This one is a mess but I wanted to be able to make each one different.  So I imported a bunch of fonts LOL
+body :nth-child(1){
+  width:400px;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  padding:0;
+  margin:auto;
+}
+
+dl :nth-child(odd){
+  //the dt's all of them
+  height:200px;
+  width:200px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  text-align:center;
+}
+dl :nth-child(even){
+  //the dd's
+  height:200px;
+  width:200px;
+  margin:0;
+  padding:0;
+  over-flow:hidden;
+}
+
+/*first row*/
+dl :nth-child(1), dl :nth-child(2){font-family: 'Roboto Mono', monospace;}
+dl :nth-child(1){
+  background-color:#f5b0cb;
+  color:#39375b;
+  font-size:9rem;
+}
+dl :nth-child(2){
+  color:#d62196;
+  font-size:1.6rem;
+}
+
+/*second row*/
+dl :nth-child(3){
+  color:#94aa2a;
+  font-size:9rem;
+  font-family: 'Courgette', cursive;
+}
+dl :nth-child(4){
+  background-color:#46b5d1;
+  color:#fff;
+  font-size:1.9em;
+  font-family: 'Bebas Neue', cursive;
+  text-align:center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*third row*/
+dl :nth-child(5), dl :nth-child(6){font-family: 'Anton', sans-serif;}
+dl :nth-child(5){
+  background-color:#1b2a49;
+  color:#f45905;
+  font-size:9rem;
+}
+dl :nth-child(6){
+  color:#3c4245;
+  font-size:1.7rem;
+  transform:rotate(90deg);
+}
+
+/*4th row*/
+dl :nth-child(7), dl :nth-child(8){font-family: 'Josefin Sans', sans-serif;}
+dl :nth-child(7){
+  color:#fff;
+  font-size:9rem;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #f35588;
+}
+dl :nth-child(8){
+  color:#fff;
+  background-color:#000000;
+  font-size:2rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #f35588;
+  text-align:center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*5th row*/
+dl :nth-child(9), dl :nth-child(10){font-family: 'Indie Flower', cursive;}
+dl :nth-child(9){
+  color:#beebe9;
+  font-size:9rem;
+  background-color:#ffe3ed;
+}
+dl :nth-child(10){
+  color:#9be3de;
+  font-size:1.7rem;
+}
+
+/*6th row*/
+dl :nth-child(11), dl :nth-child(12){
+  font-family: 'Merriweather Sans', sans-serif;
+  transform:rotate(180deg);
+}
+dl :nth-child(11){
+  color:#232020;
+  font-size:10rem;
+}
+dl :nth-child(12){
+  color:#ff7315;
+  background-color:#3a3535;
+  font-size:1.7rem;
+}
+
+/*7h row*/
+dl :nth-child(13), dl :nth-child(14){font-family: 'Amatic SC', cursive;}
+dl :nth-child(13){
+  color:#baabda;
+  font-size:9rem;
+  background-color:#dcffcc;
+}
+dl :nth-child(14){
+  color:#d79abc;
+  font-size:1.7rem;
+}
+
+/*8th row*/
+dl :nth-child(15), dl :nth-child(16){font-family: 'Monoton', cursive;}
+dl :nth-child(15){
+
+  font-size:9rem;
+  color:#ff6361;
+}
+dl :nth-child(16){
+  font-family:"times new roman";
+  color:#ecfcff;
+  background-color:#3e64ff;
+  font-size:2rem;
+  text-align:center;
+  text-shadow: 2px 2px #ff6361;
+}
+
+/*9th row*/
+dl :nth-child(17), dl :nth-child(18){font-family: 'Cinzel Decorative', cursive;}
+dl :nth-child(17){
+  background-color:#222831;
+  font-size:9rem;
+  color:#801336;
+}
+dl :nth-child(18){
+  color:#801336;
+  font-size:1.6rem;
+  text-align:right;
+}
+
+/*final row*/
+dl :nth-child(19), dl :nth-child(20){font-family: 'Graduate', cursive;}
+dl :nth-child(19){
+  font-size:13rem;
+  color:#dfcdc3;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #719192;
+}
+dl :nth-child(20){
+  background-color:#3c4245;
+  color:#719192;
+  font-size:1.8rem;
+  text-align:left;
+}

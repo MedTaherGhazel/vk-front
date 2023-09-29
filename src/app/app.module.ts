@@ -18,6 +18,8 @@ import { AboutComponent } from './about/about.component';
 import { BodyfatModalComponent } from './bodyfat-modal/bodyfat-modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { UtilitiesComponent } from './utilities/utilities.component';
+import { TopbodyComponent } from './topbody/topbody.component';
+import { SponsorsComponent } from './sponsors/sponsors.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { UtilitiesComponent } from './utilities/utilities.component';
     AboutComponent,
     BodyfatModalComponent,
     UtilitiesComponent,
+    TopbodyComponent,
+    SponsorsComponent,
 
   ],
   imports: [
